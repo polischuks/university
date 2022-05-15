@@ -1,0 +1,20 @@
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: "jdbc:postgresql://localhost:5432/univer"
+    username: postgres
+    password: gjkboer
+
+  flyway:
+    url: jdbc:postgresql://localhost:5432/univer
+    user: postgres
+    password: gjkboer
+    enabled: true
+    locations: 'classpath:db/migration'
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+server:
+  port: 2578
